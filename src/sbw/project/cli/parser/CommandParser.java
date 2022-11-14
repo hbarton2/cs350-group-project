@@ -7,7 +7,5 @@ public class CommandParser {
         return;
     }
 
-    public void parse() {
-        return;
-    }
+    public void parse() {}
 }
