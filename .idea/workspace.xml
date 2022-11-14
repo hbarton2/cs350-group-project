@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs350-group-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cs350-group-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" afterDir="false" />
-    </list>
+    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="Created Startup Class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,8 +49,16 @@
       <updated>1668448891974</updated>
       <workItem from="1668448893372" duration="409000" />
       <workItem from="1668449173455" duration="1650000" />
-      <workItem from="1668454855896" duration="539000" />
+      <workItem from="1668454855896" duration="1174000" />
     </task>
+    <task id="LOCAL-00001" summary="Created Startup Class">
+      <created>1668455420388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668455420388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +74,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Startup Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Startup Class" />
   </component>
 </project>
