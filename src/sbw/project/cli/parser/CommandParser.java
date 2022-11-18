@@ -31,7 +31,7 @@ public class CommandParser {
     // Given the first word of the command : Returns the command type
     private String getCommandType(String cmd) {
         return switch (cmd) {
-            case "@EXIT", "@CLOCK", "@RUN", "@WAIT" -> "MISC";
+            case "@EXIT", "@CLOCK" -> "MISC";
             case "CREATE" -> "CREATIONAL";
             default -> "";
         };
@@ -49,15 +49,6 @@ public class CommandParser {
         else if (commandArr[0].equalsIgnoreCase("@CLOCK")) {
             Rate rate = new Rate(Integer.parseInt(commandArr[1]));
             this.actionSet.getActionMiscellaneous().submitCommand(new CommandDoSetClockRate(rate));
-        }
-        else if (commandArr[0].equalsIgnoreCase("@WAIT")
-                && commandArr.length > 1) {
-            Rate rate = new Rate(Integer.parseInt(commandArr[1]));
-            this.actionSet.getActionMiscellaneous().submitCommand(new CommandDoWait(rate));
-        }
-        else if (commandArr[0].equalsIgnoreCase("@RUN")) {
-            String filename = commandArr[1].substring(1, commandArr[1].length()-1);
-            this.actionSet.getActionMiscellaneous().submitCommand(new CommandDoRunCommandFile(filename));
         }
     }
 
