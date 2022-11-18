@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="Added a little bit to misc commands">
+    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="Undid the add to misc, didn't realize we only needed 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" afterDir="false" />
     </list>
@@ -54,7 +54,7 @@
       <workItem from="1668449173455" duration="1650000" />
       <workItem from="1668454855896" duration="1174000" />
       <workItem from="1668461506021" duration="775000" />
-      <workItem from="1668733874481" duration="1881000" />
+      <workItem from="1668733874481" duration="5227000" />
     </task>
     <task id="LOCAL-00001" summary="Created Startup Class">
       <created>1668455420388</created>
@@ -77,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668736855945</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Undid the add to misc, didn't realize we only needed 3">
+      <created>1668795484702</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668795484702</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +105,7 @@
     <MESSAGE value="Created Startup Class" />
     <MESSAGE value="Fixed Startup.java to execute cli" />
     <MESSAGE value="Added a little bit to misc commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a little bit to misc commands" />
+    <MESSAGE value="Undid the add to misc, didn't realize we only needed 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Undid the add to misc, didn't realize we only needed 3" />
   </component>
 </project>
