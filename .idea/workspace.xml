@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="Created Startup Class" />
+    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="Fixed Startup.java to execute cli">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,17 +31,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/hbarton/Documents/School Docs/CSCD 350/Group Project/cs350-project-v02.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hbarton/Documents/School Docs/CSCD 350/Group Project/cs350-project-v02.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,6 +53,8 @@
       <workItem from="1668448893372" duration="409000" />
       <workItem from="1668449173455" duration="1650000" />
       <workItem from="1668454855896" duration="1174000" />
+      <workItem from="1668461506021" duration="775000" />
+      <workItem from="1668733874481" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="Created Startup Class">
       <created>1668455420388</created>
@@ -58,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668455420388</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed Startup.java to execute cli">
+      <created>1668461587111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668461587111</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,6 +89,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Startup Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Startup Class" />
+    <MESSAGE value="Fixed Startup.java to execute cli" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Startup.java to execute cli" />
   </component>
 </project>
