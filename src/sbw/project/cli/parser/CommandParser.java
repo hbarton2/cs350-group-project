@@ -2,6 +2,7 @@ package sbw.project.cli.parser;
 
 import sbw.architecture.datatype.*;
 import sbw.project.cli.action.ActionSet;
+import sbw.project.cli.action.command.behavioral.*;
 import sbw.project.cli.action.command.misc.*;
 import sbw.project.cli.action.ActionCreational.*;
 
@@ -34,6 +35,9 @@ public class CommandParser {
             else if(getCommandType(commandArr[0]).equalsIgnoreCase("STRUCTURAL")) {
                 structuralHandler(commandArr);
             }
+            else if(getCommandType(commandArr[0]).equalsIgnoreCase("BEHAVIORAL")) {
+                behavioralHandler(commandArr);
+            }
         }
     }
 
@@ -43,6 +47,7 @@ public class CommandParser {
             case "@EXIT", "@CLOCK" -> "MISC";
             case "CREATE" -> "CREATIONAL";
             case "DECLARE", "COMMIT" -> "STRUCTURAL";
+            case "DO", "HALT" -> "BEHAVIORAL";
             default -> "";
         };
     }
@@ -170,6 +175,63 @@ public class CommandParser {
         }
         else if(part.equalsIgnoreCase("BUS")) {
             this.actionSet.getActionStructural().doDeclareBus(id1, idn);
+        }
+    }
+
+    public void behavioralHandler(String[] commandArr) {
+        Identifier id = new Identifier(commandArr[1]);
+        if(commandArr[0].equalsIgnoreCase("HALT")) {
+            this.actionSet.getActionBehavioral().submitCommand(new CommandDoHalt(id));
+        }
+        else {
+            String part = "";
+            Angle angle = null;
+            Power power = null;
+            Identifier id2 = null;
+            Position position = null;
+            boolean direction = false;
+            if(commandArr[2].equalsIgnoreCase("DEFLECT")) {
+                part = commandArr[3];
+                if(part.equalsIgnoreCase("FLAP")) {
+                    position = new Position(Position.getEnum(Integer.parseInt(commandArr[4])));
+                }
+                else if(part.equalsIgnoreCase("RUDDER")) {
+                    Double d = tryParsing(commandArr[4]);
+                    if(d != null) angle = new Angle(d);
+                    direction = commandArr[5].equalsIgnoreCase("RIGHT");
+                }
+            }
+            else if(commandArr[3].equalsIgnoreCase("POWER")) {
+                Double d = tryParsing(commandArr[4]);
+                if(d != null) power = new Power(d);
+                if(commandArr.length > 5) {
+                    id2 = new Identifier(commandArr[6]);
+                }
+            }
+            else if(commandArr[2].equalsIgnoreCase("GEAR")) {
+                direction = commandArr[3].equalsIgnoreCase("DOWN");
+            }
+            callBehavioralCommand(part, id, angle, position, power, id2 ,direction);
+        }
+    }
+
+    public void callBehavioralCommand(String part, Identifier id, Angle angle, Position position, Power power, Identifier id2, boolean direction) {
+        if(part.equalsIgnoreCase("RUDDER")) {
+            this.actionSet.getActionBehavioral().submitCommand(new CommandDoDeflectRudder(id, angle, direction));
+        }
+        else if(part.equalsIgnoreCase("FLAP")) {
+            this.actionSet.getActionBehavioral().submitCommand(new CommandDoSetFlaps(id, position));
+        }
+        else if(part.equalsIgnoreCase("POWER")) {
+            if(id2 != null) {
+                this.actionSet.getActionBehavioral().submitCommand(new CommandDoSetEnginePowerSingle(id, power, id2));
+            }
+            else {
+                this.actionSet.getActionBehavioral().submitCommand(new CommandDoSetEnginePowerAll(id, power));
+            }
+        }
+        else if(part.equalsIgnoreCase("GEAR")) {
+            this.actionSet.getActionBehavioral().submitCommand(new CommandDoSelectGear(id, direction));
         }
     }
 

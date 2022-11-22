@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="Undid the add to misc, didn't realize we only needed 3">
+    <list default="true" id="12aceb77-11a7-45ee-beef-7c77d66b722b" name="Changes" comment="Added structural parsing and handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sbw/project/cli/parser/CommandParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/hbarton/Documents/School Docs/CSCD 350/Group Project/cs350-project-v02.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hbarton/Documents/School Docs/CSCD 350/Group Project/cs350-project-v02.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +61,9 @@
       <workItem from="1668449173455" duration="1650000" />
       <workItem from="1668454855896" duration="1174000" />
       <workItem from="1668461506021" duration="775000" />
-      <workItem from="1668733874481" duration="5227000" />
+      <workItem from="1668733874481" duration="5562000" />
+      <workItem from="1669140146562" duration="919000" />
+      <workItem from="1669144996490" duration="1994000" />
     </task>
     <task id="LOCAL-00001" summary="Created Startup Class">
       <created>1668455420388</created>
@@ -90,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668795484702</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added structural parsing and handling">
+      <created>1668809277903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668809277903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +122,7 @@
     <MESSAGE value="Fixed Startup.java to execute cli" />
     <MESSAGE value="Added a little bit to misc commands" />
     <MESSAGE value="Undid the add to misc, didn't realize we only needed 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Undid the add to misc, didn't realize we only needed 3" />
+    <MESSAGE value="Added structural parsing and handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added structural parsing and handling" />
   </component>
 </project>
