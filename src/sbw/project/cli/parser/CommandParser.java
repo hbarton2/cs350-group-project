@@ -79,7 +79,7 @@ public class CommandParser {
             if(commandArr[i].equalsIgnoreCase("CREATE")) {
                 part = commandArr[i + 1];
 
-                if(part.equalsIgnoreCase("SPLIT") || part.equalsIgnoreCase("MAIN") || part.equalsIgnoreCase("NOSE")) {
+                if(part.equalsIgnoreCase("SPLIT") || part.equalsIgnoreCase("MAIN") || part.equalsIgnoreCase("NOSE") || part.equalsIgnoreCase("FOWLER")) {
                     id = new Identifier(commandArr[i + 3]);
                 }
                 else {
