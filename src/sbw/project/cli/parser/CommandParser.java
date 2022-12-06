@@ -78,7 +78,13 @@ public class CommandParser {
         for(int i = 0; i < commandArr.length - 1; i++) {
             if(commandArr[i].equalsIgnoreCase("CREATE")) {
                 part = commandArr[i + 1];
-                id = new Identifier(commandArr[i + 2]);
+
+                if(part.equalsIgnoreCase("SPLIT") || part.equalsIgnoreCase("MAIN") || part.equalsIgnoreCase("NOSE")) {
+                    id = new Identifier(commandArr[i + 3]);
+                }
+                else {
+                    id = new Identifier(commandArr[i + 2]);
+                }
             }
             else if(commandArr[i].equalsIgnoreCase("LIMIT")) {
                 Double par = tryParsing(commandArr[i + 1]);
@@ -151,8 +157,13 @@ public class CommandParser {
                 idn.add(new Identifier(commandArr[9]));
                 idn.add(new Identifier(commandArr[10]));
             }
-            else {
+            else if(part.equalsIgnoreCase("BUS")) {
                 for(int i = 5; i < commandArr.length; i++) {
+                    idn.add(new Identifier(commandArr[i]));
+                }
+            }
+            else {
+                for(int i = 6; i < commandArr.length; i++) {
                     idn.add(new Identifier(commandArr[i]));
                 }
             }
